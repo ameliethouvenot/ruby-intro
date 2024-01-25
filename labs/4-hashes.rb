@@ -29,4 +29,11 @@ bitcoin = gets.chomp
 bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
-# puts bitcoin_data
+conversation_rate = bitcoin_data["bpi"]["USD"]["rate_float"]
+portfolio_value = bitcoin * conversation_rate
+
+# 1 Bitcoin is valued at $41405.1046 USD.
+# Your Bitcoin is worth $62107.6569.
+
+puts "#{bitcoin} Bitcoin is valued at #{conversation_rate} USD"
+puts "Your Bitcoin is worth $#{portfolio_value}"
