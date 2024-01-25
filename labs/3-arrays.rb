@@ -15,3 +15,25 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+#store my list and Ben's list 
+my_list = ["beer", "ice cream", "chips", "milk"]
+bens_list = ["kale", "nuts", "beer"]
+
+# store the combined list 
+combined_list = my_list + bens_list 
+
+# store the list, sorted 
+sorted_list = combined_list.sort
+
+#get rid of the non-unique items 
+unique_list = sorted_list.uniq
+
+puts unique_list
+
+puts "Buy #{unique_list[0]}"
+puts "Buy #{unique_list[1]}"
+puts "Buy #{unique_list[2]}"
+puts "Buy #{unique_list[3]}"
+puts "Buy #{unique_list[4]}"
+puts "Buy #{unique_list[5]}"
